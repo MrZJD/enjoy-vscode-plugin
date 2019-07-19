@@ -3,7 +3,7 @@
 	"publisher": "enjoy-vscode-plugin",
 	"displayName": "enjoy net",
 	"description": "enjoy net by vscode",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": {
 		"url": "https://github.com/MrZJD/enjoy-vscode-plugin.git"
 	},
