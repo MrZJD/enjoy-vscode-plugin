@@ -16,7 +16,8 @@
 	"activationEvents": [
 		"onCommand:enjoy.start",
 		"onCommand:enjoy.baidu",
-		"onCommand:enjoy.v2ex"
+		"onCommand:enjoy.v2ex",
+		"onCommand:enjoy.cnode"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -32,6 +33,10 @@
 			{
 				"command": "enjoy.v2ex",
 				"title": "enjoy: v2ex service"
+			},
+			{
+				"command": "enjoy.cnode",
+				"title": "enjoy: cnode service"
 			}
 		]
 	},

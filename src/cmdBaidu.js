@@ -12,11 +12,11 @@ function showResult (output, query, page) {
             if (!chose) return
 
             if (chose === BtnNext) {
-                showResult(query, page + 1)
+                showResult(output, query, page + 1)
                 return
             }
             if (chose === BtnPrev) {
-                showResult(query, page - 1)
+                showResult(output, query, page - 1)
                 return
             }
 
@@ -24,6 +24,9 @@ function showResult (output, query, page) {
             output.show()
             output.append(JSON.stringify(target, null, 4))
         })
+    }).catch(err => {
+        loading.dispose()
+        vscode.window.showErrorMessage(err.message)
     })
 }
 

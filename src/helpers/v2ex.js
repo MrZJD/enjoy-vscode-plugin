@@ -40,7 +40,7 @@ async function getContent (url) {
 
     let comment = $('.reply_content').map((item, el) => {
         return `${ $(el).siblings('strong').find('a').text() } |:| ${ $(el).text() }`
-    }).get().join('\n\r')
+    }).get().join('\n')
 
     return `----${title}----
 

@@ -12,6 +12,9 @@ function loadProxy (output, service) {
 
             loadContent(target.url, output)
         })
+    }).catch(err => {
+        loading.dispose()
+        vscode.window.showErrorMessage(err.message)
     })
 }
 
@@ -33,6 +36,9 @@ function loadContent (url, output) {
         loading.dispose()
         output.show()
         output.append(data)
+    }).catch(err => {
+        loading.dispose()
+        vscode.window.showErrorMessage(err.message)
     })
 }
 
