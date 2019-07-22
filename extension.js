@@ -2,6 +2,7 @@ const vscode = require('vscode')
 const cmdBaidu = require('./src/cmdBaidu')
 const cmdV2ex = require('./src/cmdV2ex')
 const cmdCnode = require('./src/cmdCnode')
+const cmdSeg = require('./src/cmdSeg')
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -32,6 +33,7 @@ function activate(context) {
 	context.subscriptions.push(cmdBaidu(env))
 	context.subscriptions.push(cmdV2ex(env))
 	context.subscriptions.push(cmdCnode(env))
+	context.subscriptions.push(cmdSeg(env))
 }
 exports.activate = activate
 

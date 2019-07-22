@@ -3,7 +3,7 @@
 	"publisher": "enjoy-vscode-plugin",
 	"displayName": "enjoy net",
 	"description": "enjoy net by vscode",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"repository": {
 		"url": "https://github.com/MrZJD/enjoy-vscode-plugin.git"
 	},
@@ -17,14 +17,15 @@
 		"onCommand:enjoy.start",
 		"onCommand:enjoy.baidu",
 		"onCommand:enjoy.v2ex",
-		"onCommand:enjoy.cnode"
+		"onCommand:enjoy.cnode",
+		"onCommand:enjoy.segmentfault"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "enjoy.start",
-				"title": "enjoy: start 开启enjoy服务"
+				"title": "enjoy: start enjoy service"
 			},
 			{
 				"command": "enjoy.baidu",
@@ -37,6 +38,10 @@
 			{
 				"command": "enjoy.cnode",
 				"title": "enjoy: cnode service"
+			},
+			{
+				"command": "enjoy.segmentfault",
+				"title": "enjoy: segmentfault service"
 			}
 		]
 	},
